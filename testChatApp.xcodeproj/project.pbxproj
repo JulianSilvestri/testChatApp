@@ -14,6 +14,11 @@
 		DCBB2CC627AC29C00062D579 /* testChatApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DCBB2CC427AC29C00062D579 /* testChatApp.xcdatamodeld */; };
 		DCBB2CC827AC29C10062D579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCBB2CC727AC29C10062D579 /* Assets.xcassets */; };
 		DCBB2CCB27AC29C10062D579 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCBB2CC927AC29C10062D579 /* LaunchScreen.storyboard */; };
+		DCBB2CD327AC3A140062D579 /* ChatHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBB2CD227AC3A140062D579 /* ChatHistory.swift */; };
+		DCBB2CD827AC3FBB0062D579 /* ChatBoxTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBB2CD727AC3FBB0062D579 /* ChatBoxTableCell.swift */; };
+		DCBB2CDC27AC74DE0062D579 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBB2CDB27AC74DE0062D579 /* CustomView.swift */; };
+		DCBB2CDE27ADB6570062D579 /* KeyboardInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBB2CDD27ADB6570062D579 /* KeyboardInfo.swift */; };
+		DCBB2CE027ADDBD60062D579 /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBB2CDF27ADDBD60062D579 /* CustomTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		DCBB2CC727AC29C10062D579 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCBB2CCA27AC29C10062D579 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCBB2CCC27AC29C10062D579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCBB2CD227AC3A140062D579 /* ChatHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHistory.swift; sourceTree = "<group>"; };
+		DCBB2CD727AC3FBB0062D579 /* ChatBoxTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBoxTableCell.swift; sourceTree = "<group>"; };
+		DCBB2CDB27AC74DE0062D579 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		DCBB2CDD27ADB6570062D579 /* KeyboardInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardInfo.swift; sourceTree = "<group>"; };
+		DCBB2CDF27ADDBD60062D579 /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +68,11 @@
 		DCBB2CBA27AC29C00062D579 /* testChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				DCBB2CD627AC3EFE0062D579 /* Controller */,
+				DCBB2CD527AC3EF80062D579 /* View */,
+				DCBB2CD427AC3EF30062D579 /* Model */,
 				DCBB2CBB27AC29C00062D579 /* AppDelegate.swift */,
 				DCBB2CBD27AC29C00062D579 /* SceneDelegate.swift */,
-				DCBB2CBF27AC29C00062D579 /* ViewController.swift */,
 				DCBB2CC127AC29C00062D579 /* Main.storyboard */,
 				DCBB2CC727AC29C10062D579 /* Assets.xcassets */,
 				DCBB2CC927AC29C10062D579 /* LaunchScreen.storyboard */,
@@ -68,6 +80,33 @@
 				DCBB2CC427AC29C00062D579 /* testChatApp.xcdatamodeld */,
 			);
 			path = testChatApp;
+			sourceTree = "<group>";
+		};
+		DCBB2CD427AC3EF30062D579 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DCBB2CD227AC3A140062D579 /* ChatHistory.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DCBB2CD527AC3EF80062D579 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DCBB2CD727AC3FBB0062D579 /* ChatBoxTableCell.swift */,
+				DCBB2CDB27AC74DE0062D579 /* CustomView.swift */,
+				DCBB2CDD27ADB6570062D579 /* KeyboardInfo.swift */,
+				DCBB2CDF27ADDBD60062D579 /* CustomTextView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DCBB2CD627AC3EFE0062D579 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DCBB2CBF27AC29C00062D579 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +180,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCBB2CDC27AC74DE0062D579 /* CustomView.swift in Sources */,
 				DCBB2CC027AC29C00062D579 /* ViewController.swift in Sources */,
+				DCBB2CE027ADDBD60062D579 /* CustomTextView.swift in Sources */,
 				DCBB2CC627AC29C00062D579 /* testChatApp.xcdatamodeld in Sources */,
 				DCBB2CBC27AC29C00062D579 /* AppDelegate.swift in Sources */,
 				DCBB2CBE27AC29C00062D579 /* SceneDelegate.swift in Sources */,
+				DCBB2CD827AC3FBB0062D579 /* ChatBoxTableCell.swift in Sources */,
+				DCBB2CD327AC3A140062D579 /* ChatHistory.swift in Sources */,
+				DCBB2CDE27ADB6570062D579 /* KeyboardInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +345,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -329,6 +374,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
